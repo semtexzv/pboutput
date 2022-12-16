@@ -1,0 +1,114 @@
+msg {
+begin {
+  start_lsn: 28897776
+  final_lsn: 28898008
+  txid: 929
+}
+}
+msg {
+relation {
+  id: 49248
+  namespace: "public"
+  name: "a"
+  columns {
+    name: "a"
+    builtin: INT4
+  }
+  columns {
+    name: "b"
+    builtin: FLOAT8
+  }
+}
+}
+msg {
+change {
+  relid: 49248
+  new {
+    int: 0
+  }
+  new {
+    float: 1
+  }
+  type: Insert
+}
+}
+msg {
+commit {
+  final_lsn: 28898008
+  commit_time: 724379025873114
+}
+}
+msg {
+begin {
+  start_lsn: 28898056
+  final_lsn: 28898136
+  txid: 930
+}
+}
+msg {
+change {
+  relid: 49248
+  old {
+    int: 0
+  }
+  old {
+    float: 1
+  }
+  type: Delete
+}
+}
+msg {
+commit {
+  final_lsn: 28898136
+  commit_time: 724379025873576
+}
+}
+msg {
+begin {
+  start_lsn: 28899064
+  final_lsn: 28899208
+  txid: 932
+}
+}
+msg {
+relation {
+  id: 49248
+  namespace: "public"
+  name: "a"
+  columns {
+    name: "a"
+    builtin: INT4
+  }
+  columns {
+    name: "b"
+    builtin: FLOAT8
+  }
+  columns {
+    name: "c"
+    builtin: FLOAT8
+  }
+}
+}
+msg {
+change {
+  relid: 49248
+  new {
+    int: 0
+  }
+  new {
+    float: 1
+  }
+  new {
+    float: 2
+  }
+  type: Insert
+}
+}
+msg {
+commit {
+  final_lsn: 28899208
+  commit_time: 724379025874337
+}
+}
+msg {
+}

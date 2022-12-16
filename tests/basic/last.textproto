@@ -1,0 +1,35 @@
+msg {
+begin {
+  start_lsn: 28841088
+  final_lsn: 28841152
+  txid: 925
+}
+}
+msg {
+relation {
+  id: 49245
+  namespace: "public"
+  name: "a"
+  columns {
+    name: "a"
+    builtin: INT4
+  }
+}
+}
+msg {
+change {
+  relid: 49245
+  new {
+    int: 0
+  }
+  type: Insert
+}
+}
+msg {
+commit {
+  final_lsn: 28841152
+  commit_time: 724379025718975
+}
+}
+msg {
+}

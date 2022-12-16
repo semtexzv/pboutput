@@ -1,0 +1,5 @@
+comment = 'pboutput:  Created by pgx'
+default_version = '@CARGO_VERSION@'
+module_pathname = '$libdir/pboutput'
+relocatable = false
+superuser = false
